@@ -1,0 +1,50 @@
+ Objects and its internal representation in Javascript :
+
+ What is an object?
+    An object is a reference datatype which contains a collection of key-value pair.
+    By using objects, we can store data in key-value pair.
+
+ Syntax to create an object :
+ var object_name = {
+    key1 : value1,
+    key2 : value2,
+    .............
+    key-n : value-n
+ } ;
+
+ We can add any number of key-value pars
+ Each key/property name must be unique
+ We can add any datatype value including array datatype
+
+ Example :
+ var emp = {
+    id : 1,
+    name : "Raj",
+    age : 27,
+    dept : "EEE",
+    bloodGroup : "A-ve",
+    marks : [50,60,70]
+ }  
+
+ Here, "emp" is the object name and id,name,age,dept and bloodGroup are properties
+
+ Syntax to access the property :
+    PropertyName.ObjectName
+ Example :
+    emp.dept;
+    The above code refers the value "EEE"
+
+Syntax to modify an object :
+    ObjectName.PropertyName = NewValue
+ Example : 
+    emp.marks = [70,80,90];   
+
+Internal representation of objects :
+    Internally, JavaScript objects are represented as a set of key-value pairs, where the values can be any type of data, including functions, arrays, other objects, and primitive data types like strings, numbers, and booleans.
+    The keys are always strings (or symbols).
+    JavaScript objects are internally implemented with hash tables or comparable data structures to quickly store and retrieve values according to their keys. This makes it possible to access and modify object properties quickly.
+    In JavaScript, an object is essentially an instance of the Object class, which is the base class for all objects in the language. This can be achieved by using object literals or the new Object() constructor.
+    Example : var subjects = new subjects("Maths","Science","Hisory")
+
+
+
